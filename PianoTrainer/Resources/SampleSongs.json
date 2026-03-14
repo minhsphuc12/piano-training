@@ -1,0 +1,83 @@
+[
+  {
+    "id": "fur-elise",
+    "title": "Für Elise",
+    "composer": "L. van Beethoven",
+    "bpm": 56.0,
+    "difficulty": "beginner",
+    "timeSignatureNumerator": 3,
+    "timeSignatureDenominator": 8,
+    "chunks": [
+      {
+        "id": 0,
+        "startBar": 1,
+        "endBar": 4,
+        "notes": [
+          { "id": "00000000-0000-0000-0000-000000000001", "pitch": 64, "startTime": 0.0,  "duration": 0.32, "finger": 3, "hand": "right", "velocity": 75 },
+          { "id": "00000000-0000-0000-0000-000000000002", "pitch": 63, "startTime": 0.36, "duration": 0.32, "finger": 2, "hand": "right", "velocity": 70 },
+          { "id": "00000000-0000-0000-0000-000000000003", "pitch": 64, "startTime": 0.72, "duration": 0.32, "finger": 3, "hand": "right", "velocity": 75 },
+          { "id": "00000000-0000-0000-0000-000000000004", "pitch": 59, "startTime": 1.08, "duration": 0.32, "finger": 1, "hand": "right", "velocity": 70 },
+          { "id": "00000000-0000-0000-0000-000000000005", "pitch": 62, "startTime": 1.44, "duration": 0.32, "finger": 2, "hand": "right", "velocity": 70 },
+          { "id": "00000000-0000-0000-0000-000000000006", "pitch": 60, "startTime": 1.80, "duration": 0.32, "finger": 1, "hand": "right", "velocity": 70 },
+          { "id": "00000000-0000-0000-0000-000000000007", "pitch": 57, "startTime": 2.16, "duration": 0.65, "finger": 5, "hand": "right", "velocity": 75 }
+        ]
+      },
+      {
+        "id": 1,
+        "startBar": 5,
+        "endBar": 8,
+        "notes": [
+          { "id": "00000000-0000-0000-0000-000000000011", "pitch": 45, "startTime": 0.0,  "duration": 0.65, "finger": 5, "hand": "left",  "velocity": 65 },
+          { "id": "00000000-0000-0000-0000-000000000012", "pitch": 52, "startTime": 0.0,  "duration": 0.65, "finger": 2, "hand": "left",  "velocity": 60 },
+          { "id": "00000000-0000-0000-0000-000000000013", "pitch": 57, "startTime": 0.0,  "duration": 0.65, "finger": 1, "hand": "left",  "velocity": 60 },
+          { "id": "00000000-0000-0000-0000-000000000014", "pitch": 64, "startTime": 0.0,  "duration": 0.32, "finger": 3, "hand": "right", "velocity": 75 },
+          { "id": "00000000-0000-0000-0000-000000000015", "pitch": 63, "startTime": 0.36, "duration": 0.32, "finger": 2, "hand": "right", "velocity": 70 },
+          { "id": "00000000-0000-0000-0000-000000000016", "pitch": 64, "startTime": 0.72, "duration": 0.32, "finger": 3, "hand": "right", "velocity": 75 },
+          { "id": "00000000-0000-0000-0000-000000000017", "pitch": 59, "startTime": 1.08, "duration": 0.32, "finger": 1, "hand": "right", "velocity": 70 },
+          { "id": "00000000-0000-0000-0000-000000000018", "pitch": 62, "startTime": 1.44, "duration": 0.32, "finger": 2, "hand": "right", "velocity": 70 },
+          { "id": "00000000-0000-0000-0000-000000000019", "pitch": 60, "startTime": 1.80, "duration": 0.32, "finger": 1, "hand": "right", "velocity": 70 },
+          { "id": "00000000-0000-0000-0000-000000000020", "pitch": 57, "startTime": 2.16, "duration": 0.65, "finger": 5, "hand": "right", "velocity": 75 }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "twinkle",
+    "title": "Twinkle Twinkle",
+    "composer": "Traditional",
+    "bpm": 80.0,
+    "difficulty": "beginner",
+    "timeSignatureNumerator": 4,
+    "timeSignatureDenominator": 4,
+    "chunks": [
+      {
+        "id": 0,
+        "startBar": 1,
+        "endBar": 2,
+        "notes": [
+          { "id": "10000000-0000-0000-0000-000000000001", "pitch": 60, "startTime": 0.0,  "duration": 0.4, "finger": 1, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000002", "pitch": 60, "startTime": 0.45, "duration": 0.4, "finger": 1, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000003", "pitch": 67, "startTime": 0.9,  "duration": 0.4, "finger": 5, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000004", "pitch": 67, "startTime": 1.35, "duration": 0.4, "finger": 5, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000005", "pitch": 69, "startTime": 1.8,  "duration": 0.4, "finger": 5, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000006", "pitch": 69, "startTime": 2.25, "duration": 0.4, "finger": 5, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000007", "pitch": 67, "startTime": 2.7,  "duration": 0.75,"finger": 5, "hand": "right", "velocity": 80 }
+        ]
+      },
+      {
+        "id": 1,
+        "startBar": 3,
+        "endBar": 4,
+        "notes": [
+          { "id": "10000000-0000-0000-0000-000000000011", "pitch": 65, "startTime": 0.0,  "duration": 0.4, "finger": 4, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000012", "pitch": 65, "startTime": 0.45, "duration": 0.4, "finger": 4, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000013", "pitch": 64, "startTime": 0.9,  "duration": 0.4, "finger": 3, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000014", "pitch": 64, "startTime": 1.35, "duration": 0.4, "finger": 3, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000015", "pitch": 62, "startTime": 1.8,  "duration": 0.4, "finger": 2, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000016", "pitch": 62, "startTime": 2.25, "duration": 0.4, "finger": 2, "hand": "right", "velocity": 75 },
+          { "id": "10000000-0000-0000-0000-000000000017", "pitch": 60, "startTime": 2.7,  "duration": 0.75,"finger": 1, "hand": "right", "velocity": 80 }
+        ]
+      }
+    ]
+  }
+]
