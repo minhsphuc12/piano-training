@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EB216CF19629B0BC643FCCE /* FingerPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D12DFCFB399A17C4CF711 /* FingerPath.swift */; };
+		115D3B66D5BCDA66F29652DE /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B34D747D5DF881A19BF073 /* KeyboardView.swift */; };
+		13EB88494D270A4B686652A8 /* ProgressRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748C474C4FB72417639A8430 /* ProgressRecord.swift */; };
+		1409789461F40CEA5E534A53 /* PhaseControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06B7A7FB63375507E043DE6 /* PhaseControlBar.swift */; };
+		163CA6AFA38ED5C1D66B8499 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB6935E9FC9CECADB97A8A /* ScoreView.swift */; };
+		42B4913367B3B1042D9CA1D3 /* PianoTrainerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9446B82E38CDE9568816AE /* PianoTrainerApp.swift */; };
+		433090D162AFDCDD53E47255 /* SongLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6AD7131326539F88E5945 /* SongLibraryView.swift */; };
+		48BBD36E1143E7D575B4DF68 /* SampleSongs.json in Resources */ = {isa = PBXBuildFile; fileRef = 776D2F5B570D8DC9A32839DE /* SampleSongs.json */; };
+		4E2355EA78BAF6FEB1B82731 /* LessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3662A78C629F4B00B9DD1686 /* LessonViewModel.swift */; };
+		50450E4BE3FA7BAC3CDFFCEF /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474346CC03AEB8D670DD0085 /* Note.swift */; };
+		7902464144890D2CB187035E /* PianoKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A076A338CDC74265BB9FD2 /* PianoKeyView.swift */; };
+		7B9F702FB8DC6D783B396736 /* LessonPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A736BFBF626D3B8A2CB84 /* LessonPlayerView.swift */; };
+		7D050F835C134EE4225C599B /* HandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FEFCBC9D08C8AEA13EF09 /* HandView.swift */; };
+		9FEB34F74115568A725F6138 /* ChunkPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7645F35AEEBD7FF922015 /* ChunkPlayer.swift */; };
+		B8E34233ECFCCD6699CF9F33 /* InputGrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E1C0116736DAA7EEBE4F3C /* InputGrader.swift */; };
+		F268B2792E859976552E316A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E60DD37A709D1497970AD1 /* Song.swift */; };
+		FF339ACF38EC2A43D67B2A01 /* ChunkProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF63BEDD38633FCFE4DB5A5D /* ChunkProgressBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3662A78C629F4B00B9DD1686 /* LessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModel.swift; sourceTree = "<group>"; };
+		3CE7645F35AEEBD7FF922015 /* ChunkPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunkPlayer.swift; sourceTree = "<group>"; };
+		474346CC03AEB8D670DD0085 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		47A076A338CDC74265BB9FD2 /* PianoKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyView.swift; sourceTree = "<group>"; };
+		49A6AD7131326539F88E5945 /* SongLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLibraryView.swift; sourceTree = "<group>"; };
+		4D6FEFCBC9D08C8AEA13EF09 /* HandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandView.swift; sourceTree = "<group>"; };
+		60E1C0116736DAA7EEBE4F3C /* InputGrader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGrader.swift; sourceTree = "<group>"; };
+		65E60DD37A709D1497970AD1 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		748C474C4FB72417639A8430 /* ProgressRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRecord.swift; sourceTree = "<group>"; };
+		776D2F5B570D8DC9A32839DE /* SampleSongs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleSongs.json; sourceTree = "<group>"; };
+		834DC70136CCD496AE3C562C /* PianoTrainer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PianoTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B34D747D5DF881A19BF073 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		9AFB6935E9FC9CECADB97A8A /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		A15D12DFCFB399A17C4CF711 /* FingerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerPath.swift; sourceTree = "<group>"; };
+		C924C3030016F04501F50B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D75A736BFBF626D3B8A2CB84 /* LessonPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonPlayerView.swift; sourceTree = "<group>"; };
+		E06B7A7FB63375507E043DE6 /* PhaseControlBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseControlBar.swift; sourceTree = "<group>"; };
+		FD9446B82E38CDE9568816AE /* PianoTrainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoTrainerApp.swift; sourceTree = "<group>"; };
+		FF63BEDD38633FCFE4DB5A5D /* ChunkProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunkProgressBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0BFA0907AAA7FE5E90DA0014 /* KeyboardView */ = {
+			isa = PBXGroup;
+			children = (
+				95B34D747D5DF881A19BF073 /* KeyboardView.swift */,
+				47A076A338CDC74265BB9FD2 /* PianoKeyView.swift */,
+			);
+			path = KeyboardView;
+			sourceTree = "<group>";
+		};
+		13BD272E62A53781F13051B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				776D2F5B570D8DC9A32839DE /* SampleSongs.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2672B3F9235F78272AB578BE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3662A78C629F4B00B9DD1686 /* LessonViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		79DEC19C20EB4949541DC0CA /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				3CE7645F35AEEBD7FF922015 /* ChunkPlayer.swift */,
+				60E1C0116736DAA7EEBE4F3C /* InputGrader.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		7A634E7260F28297D8C551B8 /* PianoTrainer */ = {
+			isa = PBXGroup;
+			children = (
+				C924C3030016F04501F50B3B /* Info.plist */,
+				FD9446B82E38CDE9568816AE /* PianoTrainerApp.swift */,
+				79DEC19C20EB4949541DC0CA /* Audio */,
+				FF32D6D5FB29D38B3FB774A1 /* Models */,
+				13BD272E62A53781F13051B2 /* Resources */,
+				2672B3F9235F78272AB578BE /* ViewModels */,
+				824414A2BEE1E9F12468296B /* Views */,
+			);
+			path = PianoTrainer;
+			sourceTree = "<group>";
+		};
+		824414A2BEE1E9F12468296B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49A6AD7131326539F88E5945 /* SongLibraryView.swift */,
+				F960C0F8E9E8D910AEF9A245 /* HandView */,
+				0BFA0907AAA7FE5E90DA0014 /* KeyboardView */,
+				FD5AE558FB91783C186F4A94 /* LessonView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B437B23B7A17AE7A1FC18C2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				834DC70136CCD496AE3C562C /* PianoTrainer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE7F1B89AE1712833A6A3304 = {
+			isa = PBXGroup;
+			children = (
+				7A634E7260F28297D8C551B8 /* PianoTrainer */,
+				B437B23B7A17AE7A1FC18C2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F960C0F8E9E8D910AEF9A245 /* HandView */ = {
+			isa = PBXGroup;
+			children = (
+				A15D12DFCFB399A17C4CF711 /* FingerPath.swift */,
+				4D6FEFCBC9D08C8AEA13EF09 /* HandView.swift */,
+			);
+			path = HandView;
+			sourceTree = "<group>";
+		};
+		FD5AE558FB91783C186F4A94 /* LessonView */ = {
+			isa = PBXGroup;
+			children = (
+				FF63BEDD38633FCFE4DB5A5D /* ChunkProgressBar.swift */,
+				D75A736BFBF626D3B8A2CB84 /* LessonPlayerView.swift */,
+				E06B7A7FB63375507E043DE6 /* PhaseControlBar.swift */,
+				9AFB6935E9FC9CECADB97A8A /* ScoreView.swift */,
+			);
+			path = LessonView;
+			sourceTree = "<group>";
+		};
+		FF32D6D5FB29D38B3FB774A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				474346CC03AEB8D670DD0085 /* Note.swift */,
+				748C474C4FB72417639A8430 /* ProgressRecord.swift */,
+				65E60DD37A709D1497970AD1 /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		799B8E2800B0067AF41ED2E7 /* PianoTrainer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57155E16B2492F412E11874C /* Build configuration list for PBXNativeTarget "PianoTrainer" */;
+			buildPhases = (
+				274D1C6E16179FF48491034B /* Sources */,
+				68FAE0E316531C68BD944B5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PianoTrainer;
+			packageProductDependencies = (
+			);
+			productName = PianoTrainer;
+			productReference = 834DC70136CCD496AE3C562C /* PianoTrainer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		980AB4412E6C5C2DCFCE05F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 14A1333CA161D25939745DF7 /* Build configuration list for PBXProject "PianoTrainer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DE7F1B89AE1712833A6A3304;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B437B23B7A17AE7A1FC18C2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				799B8E2800B0067AF41ED2E7 /* PianoTrainer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		68FAE0E316531C68BD944B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48BBD36E1143E7D575B4DF68 /* SampleSongs.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		274D1C6E16179FF48491034B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FEB34F74115568A725F6138 /* ChunkPlayer.swift in Sources */,
+				FF339ACF38EC2A43D67B2A01 /* ChunkProgressBar.swift in Sources */,
+				0EB216CF19629B0BC643FCCE /* FingerPath.swift in Sources */,
+				7D050F835C134EE4225C599B /* HandView.swift in Sources */,
+				B8E34233ECFCCD6699CF9F33 /* InputGrader.swift in Sources */,
+				115D3B66D5BCDA66F29652DE /* KeyboardView.swift in Sources */,
+				7B9F702FB8DC6D783B396736 /* LessonPlayerView.swift in Sources */,
+				4E2355EA78BAF6FEB1B82731 /* LessonViewModel.swift in Sources */,
+				50450E4BE3FA7BAC3CDFFCEF /* Note.swift in Sources */,
+				1409789461F40CEA5E534A53 /* PhaseControlBar.swift in Sources */,
+				7902464144890D2CB187035E /* PianoKeyView.swift in Sources */,
+				42B4913367B3B1042D9CA1D3 /* PianoTrainerApp.swift in Sources */,
+				13EB88494D270A4B686652A8 /* ProgressRecord.swift in Sources */,
+				163CA6AFA38ED5C1D66B8499 /* ScoreView.swift in Sources */,
+				F268B2792E859976552E316A /* Song.swift in Sources */,
+				433090D162AFDCDD53E47255 /* SongLibraryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4943BCA0E3261CDD716074EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PianoTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pianotrainer.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6923072E311E46444599D70C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PianoTrainer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pianotrainer.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D229BF1C83A3842636387CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A351B5CEA319E0F937528E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14A1333CA161D25939745DF7 /* Build configuration list for PBXProject "PianoTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D229BF1C83A3842636387CD /* Debug */,
+				A351B5CEA319E0F937528E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57155E16B2492F412E11874C /* Build configuration list for PBXNativeTarget "PianoTrainer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6923072E311E46444599D70C /* Debug */,
+				4943BCA0E3261CDD716074EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 980AB4412E6C5C2DCFCE05F4 /* Project object */;
+}
