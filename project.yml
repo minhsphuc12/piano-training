@@ -43,3 +43,14 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.pianotrainer.app
         INFOPLIST_FILE: PianoTrainer/Info.plist
+
+  PianoTrainerTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: PianoTrainerTests
+    dependencies:
+      - target: PianoTrainer
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pianotrainer.tests

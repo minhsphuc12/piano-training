@@ -19,12 +19,27 @@
 		50450E4BE3FA7BAC3CDFFCEF /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474346CC03AEB8D670DD0085 /* Note.swift */; };
 		7902464144890D2CB187035E /* PianoKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A076A338CDC74265BB9FD2 /* PianoKeyView.swift */; };
 		7B9F702FB8DC6D783B396736 /* LessonPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A736BFBF626D3B8A2CB84 /* LessonPlayerView.swift */; };
+		7BAFCFC60EBE42CC4DB50C9A /* InputGraderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3D4914C9F34907DBD05C5 /* InputGraderTests.swift */; };
 		7D050F835C134EE4225C599B /* HandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FEFCBC9D08C8AEA13EF09 /* HandView.swift */; };
+		7E512E34A458C6830534C23F /* ProgressRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8D37DFCE009F00B764D307 /* ProgressRecordTests.swift */; };
+		93283A4DB07EEE04D06F1427 /* LessonViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83FADD5E04B6461483ABACD /* LessonViewModelTests.swift */; };
+		95D1AB79FB02ABE0D222555D /* SongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8435A1552AE74C028BDA1A8B /* SongTests.swift */; };
 		9FEB34F74115568A725F6138 /* ChunkPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7645F35AEEBD7FF922015 /* ChunkPlayer.swift */; };
+		A31C3685CFDBC33207D3CABE /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79C41B02452F9253EDEEA9 /* NoteTests.swift */; };
 		B8E34233ECFCCD6699CF9F33 /* InputGrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E1C0116736DAA7EEBE4F3C /* InputGrader.swift */; };
 		F268B2792E859976552E316A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E60DD37A709D1497970AD1 /* Song.swift */; };
 		FF339ACF38EC2A43D67B2A01 /* ChunkProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF63BEDD38633FCFE4DB5A5D /* ChunkProgressBar.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8E8B1A108406D045A1D06C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 980AB4412E6C5C2DCFCE05F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 799B8E2800B0067AF41ED2E7;
+			remoteInfo = PianoTrainer;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3662A78C629F4B00B9DD1686 /* LessonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModel.swift; sourceTree = "<group>"; };
@@ -33,17 +48,23 @@
 		47A076A338CDC74265BB9FD2 /* PianoKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyView.swift; sourceTree = "<group>"; };
 		49A6AD7131326539F88E5945 /* SongLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLibraryView.swift; sourceTree = "<group>"; };
 		4D6FEFCBC9D08C8AEA13EF09 /* HandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandView.swift; sourceTree = "<group>"; };
+		5A8D37DFCE009F00B764D307 /* ProgressRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRecordTests.swift; sourceTree = "<group>"; };
 		60E1C0116736DAA7EEBE4F3C /* InputGrader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGrader.swift; sourceTree = "<group>"; };
 		65E60DD37A709D1497970AD1 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		748C474C4FB72417639A8430 /* ProgressRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRecord.swift; sourceTree = "<group>"; };
 		776D2F5B570D8DC9A32839DE /* SampleSongs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleSongs.json; sourceTree = "<group>"; };
 		834DC70136CCD496AE3C562C /* PianoTrainer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PianoTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8435A1552AE74C028BDA1A8B /* SongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTests.swift; sourceTree = "<group>"; };
+		8FA3D4914C9F34907DBD05C5 /* InputGraderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGraderTests.swift; sourceTree = "<group>"; };
 		95B34D747D5DF881A19BF073 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		9AFB6935E9FC9CECADB97A8A /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		A15D12DFCFB399A17C4CF711 /* FingerPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FingerPath.swift; sourceTree = "<group>"; };
+		AF79C41B02452F9253EDEEA9 /* NoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
 		C924C3030016F04501F50B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D75A736BFBF626D3B8A2CB84 /* LessonPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonPlayerView.swift; sourceTree = "<group>"; };
+		D76AE62F3DD853727F8FF45C /* PianoTrainerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PianoTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06B7A7FB63375507E043DE6 /* PhaseControlBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseControlBar.swift; sourceTree = "<group>"; };
+		E83FADD5E04B6461483ABACD /* LessonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModelTests.swift; sourceTree = "<group>"; };
 		FD9446B82E38CDE9568816AE /* PianoTrainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoTrainerApp.swift; sourceTree = "<group>"; };
 		FF63BEDD38633FCFE4DB5A5D /* ChunkProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunkProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +93,18 @@
 				3662A78C629F4B00B9DD1686 /* LessonViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		73CFE2DFAA9A95F1E22C4DB1 /* PianoTrainerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FA3D4914C9F34907DBD05C5 /* InputGraderTests.swift */,
+				E83FADD5E04B6461483ABACD /* LessonViewModelTests.swift */,
+				AF79C41B02452F9253EDEEA9 /* NoteTests.swift */,
+				5A8D37DFCE009F00B764D307 /* ProgressRecordTests.swift */,
+				8435A1552AE74C028BDA1A8B /* SongTests.swift */,
+			);
+			path = PianoTrainerTests;
 			sourceTree = "<group>";
 		};
 		79DEC19C20EB4949541DC0CA /* Audio */ = {
@@ -112,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				834DC70136CCD496AE3C562C /* PianoTrainer.app */,
+				D76AE62F3DD853727F8FF45C /* PianoTrainerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				7A634E7260F28297D8C551B8 /* PianoTrainer */,
+				73CFE2DFAA9A95F1E22C4DB1 /* PianoTrainerTests */,
 				B437B23B7A17AE7A1FC18C2C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -175,6 +210,24 @@
 			productReference = 834DC70136CCD496AE3C562C /* PianoTrainer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C2CC72EA8D865E645A432B06 /* PianoTrainerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E974FCBADFFBA74131A391A /* Build configuration list for PBXNativeTarget "PianoTrainerTests" */;
+			buildPhases = (
+				B8646758EA81470D15CFE971 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83A072BFD03312414EF8672A /* PBXTargetDependency */,
+			);
+			name = PianoTrainerTests;
+			packageProductDependencies = (
+			);
+			productName = PianoTrainerTests;
+			productReference = D76AE62F3DD853727F8FF45C /* PianoTrainerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +254,7 @@
 			projectRoot = "";
 			targets = (
 				799B8E2800B0067AF41ED2E7 /* PianoTrainer */,
+				C2CC72EA8D865E645A432B06 /* PianoTrainerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,9 +294,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8646758EA81470D15CFE971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BAFCFC60EBE42CC4DB50C9A /* InputGraderTests.swift in Sources */,
+				93283A4DB07EEE04D06F1427 /* LessonViewModelTests.swift in Sources */,
+				A31C3685CFDBC33207D3CABE /* NoteTests.swift in Sources */,
+				7E512E34A458C6830534C23F /* ProgressRecordTests.swift in Sources */,
+				95D1AB79FB02ABE0D222555D /* SongTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		83A072BFD03312414EF8672A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 799B8E2800B0067AF41ED2E7 /* PianoTrainer */;
+			targetProxy = A8E8B1A108406D045A1D06C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		04AF84C7E7DBEC3EF6262C27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pianotrainer.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoTrainer.app/PianoTrainer";
+			};
+			name = Release;
+		};
+		1D5BFBEC42C98FE91D4661CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pianotrainer.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PianoTrainer.app/PianoTrainer";
+			};
+			name = Debug;
+		};
 		4943BCA0E3261CDD716074EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -408,6 +514,15 @@
 			buildConfigurations = (
 				6D229BF1C83A3842636387CD /* Debug */,
 				A351B5CEA319E0F937528E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1E974FCBADFFBA74131A391A /* Build configuration list for PBXNativeTarget "PianoTrainerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5BFBEC42C98FE91D4661CC /* Debug */,
+				04AF84C7E7DBEC3EF6262C27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
