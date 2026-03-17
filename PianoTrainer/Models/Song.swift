@@ -3,7 +3,7 @@ import Foundation
 // MARK: - Chunk
 
 /// A small, learnable segment of a song (typically 2–4 bars)
-struct Chunk: Codable, Identifiable {
+struct Chunk: Codable, Identifiable, Hashable {
     let id: Int
     let startBar: Int
     let endBar: Int
@@ -35,7 +35,7 @@ enum Difficulty: String, Codable, CaseIterable {
 
 // MARK: - Song
 
-struct Song: Codable, Identifiable {
+struct Song: Codable, Identifiable, Hashable {
     let id: String
     let title: String
     let composer: String

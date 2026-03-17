@@ -2,7 +2,7 @@ import Foundation
 
 // MARK: - Hand
 
-enum Hand: String, Codable {
+enum Hand: String, Codable, Hashable {
     case left = "left"
     case right = "right"
 }
@@ -44,7 +44,7 @@ extension Finger {
 
 // MARK: - NoteEvent
 
-struct NoteEvent: Codable, Identifiable {
+struct NoteEvent: Codable, Identifiable, Hashable {
     let id: UUID
     /// MIDI pitch number (60 = Middle C)
     let pitch: Int
