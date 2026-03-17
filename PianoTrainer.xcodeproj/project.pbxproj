@@ -14,6 +14,7 @@
 		163CA6AFA38ED5C1D66B8499 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFB6935E9FC9CECADB97A8A /* ScoreView.swift */; };
 		42B4913367B3B1042D9CA1D3 /* PianoTrainerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9446B82E38CDE9568816AE /* PianoTrainerApp.swift */; };
 		433090D162AFDCDD53E47255 /* SongLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6AD7131326539F88E5945 /* SongLibraryView.swift */; };
+		48A123FF48888AC2CC523A7E /* MIDIFileImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD4EAB7F2A6F64F73EEB2A6 /* MIDIFileImporter.swift */; };
 		48BBD36E1143E7D575B4DF68 /* SampleSongs.json in Resources */ = {isa = PBXBuildFile; fileRef = 776D2F5B570D8DC9A32839DE /* SampleSongs.json */; };
 		4E2355EA78BAF6FEB1B82731 /* LessonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3662A78C629F4B00B9DD1686 /* LessonViewModel.swift */; };
 		50450E4BE3FA7BAC3CDFFCEF /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474346CC03AEB8D670DD0085 /* Note.swift */; };
@@ -27,6 +28,7 @@
 		9FEB34F74115568A725F6138 /* ChunkPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7645F35AEEBD7FF922015 /* ChunkPlayer.swift */; };
 		A31C3685CFDBC33207D3CABE /* NoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79C41B02452F9253EDEEA9 /* NoteTests.swift */; };
 		B8E34233ECFCCD6699CF9F33 /* InputGrader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E1C0116736DAA7EEBE4F3C /* InputGrader.swift */; };
+		BD8DFAC99DEFBBC3D3CE3BF7 /* SongStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F750F04D6A244C63B572D /* SongStore.swift */; };
 		F268B2792E859976552E316A /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E60DD37A709D1497970AD1 /* Song.swift */; };
 		FF339ACF38EC2A43D67B2A01 /* ChunkProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF63BEDD38633FCFE4DB5A5D /* ChunkProgressBar.swift */; };
 /* End PBXBuildFile section */
@@ -53,8 +55,9 @@
 		65E60DD37A709D1497970AD1 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		748C474C4FB72417639A8430 /* ProgressRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRecord.swift; sourceTree = "<group>"; };
 		776D2F5B570D8DC9A32839DE /* SampleSongs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleSongs.json; sourceTree = "<group>"; };
-		834DC70136CCD496AE3C562C /* PianoTrainer.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PianoTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		834DC70136CCD496AE3C562C /* PianoTrainer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoTrainer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8435A1552AE74C028BDA1A8B /* SongTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTests.swift; sourceTree = "<group>"; };
+		8E4F750F04D6A244C63B572D /* SongStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongStore.swift; sourceTree = "<group>"; };
 		8FA3D4914C9F34907DBD05C5 /* InputGraderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputGraderTests.swift; sourceTree = "<group>"; };
 		95B34D747D5DF881A19BF073 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		9AFB6935E9FC9CECADB97A8A /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
@@ -62,14 +65,23 @@
 		AF79C41B02452F9253EDEEA9 /* NoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTests.swift; sourceTree = "<group>"; };
 		C924C3030016F04501F50B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D75A736BFBF626D3B8A2CB84 /* LessonPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonPlayerView.swift; sourceTree = "<group>"; };
-		D76AE62F3DD853727F8FF45C /* PianoTrainerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = PianoTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76AE62F3DD853727F8FF45C /* PianoTrainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoTrainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E06B7A7FB63375507E043DE6 /* PhaseControlBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseControlBar.swift; sourceTree = "<group>"; };
 		E83FADD5E04B6461483ABACD /* LessonViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewModelTests.swift; sourceTree = "<group>"; };
 		FD9446B82E38CDE9568816AE /* PianoTrainerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoTrainerApp.swift; sourceTree = "<group>"; };
+		FDD4EAB7F2A6F64F73EEB2A6 /* MIDIFileImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIFileImporter.swift; sourceTree = "<group>"; };
 		FF63BEDD38633FCFE4DB5A5D /* ChunkProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChunkProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
+		082DAA36D035A801E3ED70A6 /* Import */ = {
+			isa = PBXGroup;
+			children = (
+				FDD4EAB7F2A6F64F73EEB2A6 /* MIDIFileImporter.swift */,
+			);
+			path = Import;
+			sourceTree = "<group>";
+		};
 		0BFA0907AAA7FE5E90DA0014 /* KeyboardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +134,7 @@
 				C924C3030016F04501F50B3B /* Info.plist */,
 				FD9446B82E38CDE9568816AE /* PianoTrainerApp.swift */,
 				79DEC19C20EB4949541DC0CA /* Audio */,
+				082DAA36D035A801E3ED70A6 /* Import */,
 				FF32D6D5FB29D38B3FB774A1 /* Models */,
 				13BD272E62A53781F13051B2 /* Resources */,
 				2672B3F9235F78272AB578BE /* ViewModels */,
@@ -185,6 +198,7 @@
 				474346CC03AEB8D670DD0085 /* Note.swift */,
 				748C474C4FB72417639A8430 /* ProgressRecord.swift */,
 				65E60DD37A709D1497970AD1 /* Song.swift */,
+				8E4F750F04D6A244C63B572D /* SongStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,9 +249,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1600;
-				TargetAttributes = {
-				};
+				LastUpgradeCheck = 2630;
 			};
 			buildConfigurationList = 14A1333CA161D25939745DF7 /* Build configuration list for PBXProject "PianoTrainer" */;
 			developmentRegion = en;
@@ -283,6 +295,7 @@
 				115D3B66D5BCDA66F29652DE /* KeyboardView.swift in Sources */,
 				7B9F702FB8DC6D783B396736 /* LessonPlayerView.swift in Sources */,
 				4E2355EA78BAF6FEB1B82731 /* LessonViewModel.swift in Sources */,
+				48A123FF48888AC2CC523A7E /* MIDIFileImporter.swift in Sources */,
 				50450E4BE3FA7BAC3CDFFCEF /* Note.swift in Sources */,
 				1409789461F40CEA5E534A53 /* PhaseControlBar.swift in Sources */,
 				7902464144890D2CB187035E /* PianoKeyView.swift in Sources */,
@@ -291,6 +304,7 @@
 				163CA6AFA38ED5C1D66B8499 /* ScoreView.swift in Sources */,
 				F268B2792E859976552E316A /* Song.swift in Sources */,
 				433090D162AFDCDD53E47255 /* SongLibraryView.swift in Sources */,
+				BD8DFAC99DEFBBC3D3CE3BF7 /* SongStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +433,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -440,6 +455,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.9;
@@ -485,6 +501,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -499,6 +516,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.9;

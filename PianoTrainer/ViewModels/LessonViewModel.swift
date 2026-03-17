@@ -139,4 +139,28 @@ final class LessonViewModel {
         lastGradeResult = nil
         startListen()
     }
+    
+    // MARK: - Manual Navigation
+    
+    /// Move to the next chunk manually (user-initiated)
+    func goToNextChunk() {
+        guard !isLastChunk else { return }
+        player.stop()
+        currentChunkIndex += 1
+        consecutiveCorrect = 0
+        lastGradeResult = nil
+        phase = .listen
+        startListen()
+    }
+    
+    /// Move to the previous chunk manually (user-initiated)
+    func goToPreviousChunk() {
+        guard currentChunkIndex > 0 else { return }
+        player.stop()
+        currentChunkIndex -= 1
+        consecutiveCorrect = 0
+        lastGradeResult = nil
+        phase = .listen
+        startListen()
+    }
 }

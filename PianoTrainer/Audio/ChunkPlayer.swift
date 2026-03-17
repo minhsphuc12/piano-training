@@ -53,12 +53,16 @@ final class ChunkPlayer {
             try? sampler.loadInstrument(at: builtInPianoURL())
         }
 
-        try? engine.start()
-
-        // Configure audio session
+        // Configure audio session with optimal settings for low latency
         let session = AVAudioSession.sharedInstance()
-        try? session.setCategory(.playback, mode: .default)
+        try? session.setCategory(.playback, mode: .default, options: [.mixWithOthers])
+        
+        // Set preferred buffer duration for lower latency (adjust if needed)
+        try? session.setPreferredIOBufferDuration(0.005) // 5ms
+        
         try? session.setActive(true)
+        
+        try? engine.start()
     }
 
     // MARK: - Playback
@@ -77,13 +81,16 @@ final class ChunkPlayer {
             let finger = event.finger
             let hand = event.hand
 
-            let task = Task {
+            let task = Task.detached(priority: .userInitiated) {
                 let nanos = UInt64(adjustedStart * 1_000_000_000)
                 try? await Task.sleep(nanoseconds: nanos)
                 guard !Task.isCancelled else { return }
 
-                await MainActor.run {
-                    self.sampler.startNote(UInt8(pitch), withVelocity: UInt8(velocity), onChannel: 0)
+                // Audio call (non-MainActor)
+                self.sampler.startNote(UInt8(pitch), withVelocity: UInt8(velocity), onChannel: 0)
+                
+                // UI update (async, non-blocking)
+                Task { @MainActor in
                     self.onNoteOn?(pitch, finger, hand)
                 }
 
@@ -91,8 +98,11 @@ final class ChunkPlayer {
                 try? await Task.sleep(nanoseconds: offNanos)
                 guard !Task.isCancelled else { return }
 
-                await MainActor.run {
-                    self.sampler.stopNote(UInt8(pitch), onChannel: 0)
+                // Audio call (non-MainActor)
+                self.sampler.stopNote(UInt8(pitch), onChannel: 0)
+                
+                // UI update (async, non-blocking)
+                Task { @MainActor in
                     self.onNoteOff?(pitch)
                 }
             }
@@ -101,11 +111,12 @@ final class ChunkPlayer {
 
         // Finish callback
         let totalDuration = chunk.totalDuration / tempoMultiplier
-        let finishTask = Task {
+        let finishTask = Task.detached(priority: .userInitiated) {
             let nanos = UInt64(totalDuration * 1_000_000_000) + 200_000_000
             try? await Task.sleep(nanoseconds: nanos)
             guard !Task.isCancelled else { return }
-            await MainActor.run {
+            
+            Task { @MainActor in
                 self.isPlaying = false
                 self.onChunkFinished?()
             }
@@ -144,11 +155,11 @@ final class ChunkPlayer {
 
     func previewNote(pitch: Int, velocity: Int = 80) {
         sampler.startNote(UInt8(pitch), withVelocity: UInt8(velocity), onChannel: 0)
-        Task {
+        
+        // Use detached task to avoid blocking main thread
+        Task.detached(priority: .userInitiated) { [weak sampler = self.sampler] in
             try? await Task.sleep(nanoseconds: 400_000_000)
-            await MainActor.run {
-                self.sampler.stopNote(UInt8(pitch), onChannel: 0)
-            }
+            sampler?.stopNote(UInt8(pitch), onChannel: 0)
         }
     }
 }

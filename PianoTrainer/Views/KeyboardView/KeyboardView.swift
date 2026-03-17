@@ -34,7 +34,7 @@ struct KeyboardView: View {
         // Find position of the white key to the left of this black key
         let noteInOctave = pitch % 12
         let blackKeyOffsets: [Int: CGFloat] = [
-            1: 0.6, 3: 1.6, 6: 3.6, 8: 4.6, 10: 5.6
+            1: 0.65, 3: 1.65, 6: 3.65, 8: 4.65, 10: 5.65
         ]
         guard let fraction = blackKeyOffsets[noteInOctave] else { return 0 }
 

@@ -14,10 +14,10 @@ struct PianoKeyView: View {
 
     // MARK: - Geometry
 
-    static let whiteKeyWidth: CGFloat = 44
-    static let whiteKeyHeight: CGFloat = 160
-    static let blackKeyWidth: CGFloat = 28
-    static let blackKeyHeight: CGFloat = 100
+    static let whiteKeyWidth: CGFloat = 32
+    static let whiteKeyHeight: CGFloat = 140
+    static let blackKeyWidth: CGFloat = 20
+    static let blackKeyHeight: CGFloat = 90
 
     var width: CGFloat  { isBlack ? Self.blackKeyWidth  : Self.whiteKeyWidth  }
     var height: CGFloat { isBlack ? Self.blackKeyHeight : Self.whiteKeyHeight }

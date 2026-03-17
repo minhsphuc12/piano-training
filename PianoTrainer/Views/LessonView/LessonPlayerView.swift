@@ -32,6 +32,10 @@ struct LessonPlayerView: View {
                             masteredChunks: masteredChunks
                         )
                         .padding(.horizontal)
+                        
+                        // Chunk navigation
+                        chunkNavigationBar
+                            .padding(.horizontal)
 
                         // Hand animation zone
                         handZone
@@ -129,17 +133,74 @@ struct LessonPlayerView: View {
                     .foregroundColor(.secondary)
             }
             Spacer()
-            Text("Chunk \(vm.currentChunkIndex + 1) / \(vm.song.chunks.count)")
-                .font(.caption.monospacedDigit())
-                .foregroundColor(.secondary)
-                .padding(.horizontal, 10)
-                .padding(.vertical, 4)
-                .background(Color(.tertiarySystemGroupedBackground))
-                .clipShape(Capsule())
         }
         .padding(.horizontal)
         .padding(.vertical, 12)
         .background(Color(.secondarySystemGroupedBackground))
+    }
+    
+    // MARK: - Chunk Navigation Bar
+    
+    private var chunkNavigationBar: some View {
+        HStack(spacing: 12) {
+            Button {
+                withAnimation {
+                    vm.goToPreviousChunk()
+                }
+            } label: {
+                HStack(spacing: 6) {
+                    Image(systemName: "chevron.left")
+                        .font(.system(size: 14, weight: .semibold))
+                    Text("Previous")
+                        .font(.subheadline.weight(.medium))
+                }
+                .foregroundColor(vm.currentChunkIndex > 0 ? .white : .gray)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(vm.currentChunkIndex > 0 ? Color.blue : Color(.systemGray5))
+                )
+            }
+            .disabled(vm.currentChunkIndex == 0)
+            
+            VStack(spacing: 4) {
+                Text("Chunk \(vm.currentChunkIndex + 1)")
+                    .font(.headline)
+                Text("of \(vm.song.chunks.count)")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
+            .frame(maxWidth: .infinity)
+            
+            Button {
+                withAnimation {
+                    vm.goToNextChunk()
+                }
+            } label: {
+                HStack(spacing: 6) {
+                    Text("Next")
+                        .font(.subheadline.weight(.medium))
+                    Image(systemName: "chevron.right")
+                        .font(.system(size: 14, weight: .semibold))
+                }
+                .foregroundColor(vm.isLastChunk ? .gray : .white)
+                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(vm.isLastChunk ? Color(.systemGray5) : Color.blue)
+                )
+            }
+            .disabled(vm.isLastChunk)
+        }
+        .padding(.vertical, 8)
+        .padding(.horizontal, 12)
+        .background(
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(.secondarySystemGroupedBackground))
+                .shadow(color: .black.opacity(0.05), radius: 4, y: 2)
+        )
     }
 
     // MARK: - Hand Zone

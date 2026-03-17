@@ -28,9 +28,18 @@ struct Chunk: Codable, Identifiable, Hashable {
 // MARK: - Difficulty
 
 enum Difficulty: String, Codable, CaseIterable {
-    case beginner     = "Beginner"
-    case intermediate = "Intermediate"
-    case advanced     = "Advanced"
+    case beginner     = "beginner"
+    case intermediate = "intermediate"
+    case advanced     = "advanced"
+    
+    /// Display name for UI
+    var displayName: String {
+        switch self {
+        case .beginner:     return "Beginner"
+        case .intermediate: return "Intermediate"
+        case .advanced:     return "Advanced"
+        }
+    }
 }
 
 // MARK: - Song
@@ -51,17 +60,39 @@ struct Song: Codable, Identifiable, Hashable {
     }
 }
 
-// MARK: - Song Library (bundled JSON)
+// MARK: - Song Library (bundled JSON + imported songs)
 
 struct SongLibrary {
     static func load() -> [Song] {
-        guard
-            let url = Bundle.main.url(forResource: "SampleSongs", withExtension: "json"),
-            let data = try? Data(contentsOf: url),
-            let songs = try? JSONDecoder().decode([Song].self, from: data)
-        else {
+        let bundled = loadBundled()
+        let imported = SongStore.loadAll()
+
+        // If an imported song shares an id with a bundled song, prefer imported.
+        var byId: [String: Song] = [:]
+        for song in bundled { byId[song.id] = song }
+        for song in imported { byId[song.id] = song }
+
+        return byId.values.sorted { $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending }
+    }
+
+    static func loadBundled() -> [Song] {
+        guard let url = Bundle.main.url(forResource: "SampleSongs", withExtension: "json") else {
+            print("⚠️ SampleSongs.json not found in bundle")
             return []
         }
-        return songs
+
+        guard let data = try? Data(contentsOf: url) else {
+            print("⚠️ Could not load data from SampleSongs.json")
+            return []
+        }
+
+        do {
+            let songs = try JSONDecoder().decode([Song].self, from: data)
+            print("✅ Loaded \(songs.count) bundled songs")
+            return songs
+        } catch {
+            print("⚠️ Failed to decode SampleSongs.json: \(error)")
+            return []
+        }
     }
 }
